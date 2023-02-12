@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+:root {
+  --primary: #00adff;
+  --secondary: #1400c4;
+  --secondary-light: #1400c4b3;
+  --success: #01a101;
+  --error: #ff3e3e;
+  --background: #eee;
+  --background-dark: #1d1d1d;
+  --color-blog: #fff;
+  --color-dark: #111;
+  --color-light: #ddd;
+  --color-nav: #fff;
+  --color-shadow: #11111180;
+  --color-grey: grey;
+  --color-white: #fff;
+  --color-ring1: #d5d5d5;
+}
+/* font-family: 'Montserrat', sans-serif; */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements, default styling will be removed */
+ul,
+ol {
+  list-style-type: none;
+}
+
+html {
+  font-size: 100%;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Roboto Slab", serif;
+  background-color: var(--background) !important;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
